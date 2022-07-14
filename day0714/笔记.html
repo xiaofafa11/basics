@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        命令行窗口(cmd窗口、shell指令、doc窗口)
+        .:表示当前目录
+        ..:表示上一级目录
+        cmd常用的指令
+        dir：列出当前路径下的文件和文件夹
+        cd：进入指定文件夹
+        md：创建目录(创建文件夹)
+        rd：删除指定目录(删除指定文件夹)
+        打开文件：见直接输入文件名
+        cls：清空显示
+
+        node.js
+        什么是node.js?
+        node.js是运行在服务器端的开发源代码，可以跨平台的Javascript
+        运行环境
+        node采用chrome开发的v8引擎运行js代码，使用事件驱动、非阻塞和异步I/O模式来提高性能
+
+        I/O(input/output)
+        I/O是指对磁盘的读写操作
+
+        为什么要选择node
+        1.使用Javascript语法开发后端应用
+        2.目前一些公司要求前端工程师要掌握后端开发能力
+        3.生态比较活跃，有大量的开源库可以使用
+        
+        安装完成nodejs
+        运行node -v
+        如果出现2503、2502的错误
+        原因：系统账户权限不足
+        1.解决：用管理员身份运行powerShell指令
+        2.输入运行安装命令：msiexec/package node安装包位置
+
+        nodejs的组成
+        nodejs是由ECMAScript及node环境提供的一些API组成
+        在nodejs里面可以使用所有的ECMAScript语法
+        在node环境下全局对象是global;
+        在浏览器中全局对象是window
+
+        global对象
+        console.log();    在控制台输出
+        setTimeout()      设置超时定时器
+        clearTimeout()    清除超时定时器
+        setInterval()     设置间隔定时器
+        clearInterval()   清除间隔定时器
+
+        软件中的模块化开发
+       一个功能就是一个模块，多个模块可以组成一个程序，抽走一个模块不会影响其它的模块运行 
+       
+       exports是module.exports的别名(地址引用关系)
+       导出的对象最终以module.exports为准
+
+       系统模块fs文件操作
+       f:file文件 s:system系统，即文件操作系统
+       导入fs模块
+       const fs = require("fs")；
+       读取文件
+       fs.readFile("文件路径","[文件编码格式]"，callback)
+
+       系统模块path路径
+       linux上是 /
+       windows上是\ 或者 /
+
+       path中的常用方法和属性
+       path.basename("路径")：获取路径的文件名
+       path.basename("路径"，".js"")：获取路径的文件名(去除指定的后缀)
+       path.dirname("路径")：获取路径,不包含文件名
+       path.extname("路径")：获取文件路径下的扩展名部分(后缀) 如：.js
+       path.isAbsolute("路径")：判断一个路径是否为绝对路径，返回值为布尔值
+       path.join(__dirname,"要拼接的路径")：拼接路径
+       __dirname:获取当前文件所在的路径
+
+    第三方模块
+    别人写好的，具有特定功能的，我们能直接使用的即是第三饭模块，由于第三方模块
+    也是由多个文件组成的并且放置在同一个文件夹中，又称为包
+
+    第三方模块有两种方式存在
+    1.以js文件的形式存在，提供了实现项目具体功能的API接口
+    2.以命令行工具形式存在，辅助项目开发
+
+    第三方模块库
+    npmjs.com:第三方模块库的存储分发仓库
+    获取第三方模块
+    npm(node package manager):node的第三方模块管理工具
+       下载：npm install 模块名
+       卸载：npm uninstall package 模块名
+
+    全局安装和本地安装
+    命令行工具：全局安装
+    原文件：本地安装
+
+    第三方模块nodemon(热部署)
+    nodemon是一个命令行工具，是辅助项目开发的
+    使用的步骤
+    1.使用指令：npm install nodemon -g  //-g表示全局
+    2.在命令行工具里面用nodemon来代替node指令执行文件
+    退出热部署：ctrl + c
+
+    第三方模块nrm(切换下载地址)
+    nrm(npm registry manager):npm下载地址切换工具
+    npm默认的下载地址在国外，下载速度比较缓慢
+    使用步骤：
+    1.使用指令：npm install nrm -g下载
+    2.查看国内的下载地址列表 nrm ls
+    3.切换npm下载地址 nrm use 下载地址名称
+
+    package.json文件的作用
+     项目的描述信息、记录的当前项目的项目信息，例如项目名、版本号
+
+     "name": "项目名",
+    "version": "版本信息",
+    "description": "项目描述信息",
+    "main": "主模块",
+    "scripts": 指令别名{
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [关键字],
+    "author": "作者",
+    license:项目协商	ISC：开发源代码协议
+
+    dependencies：项目运行时依赖的包
+    devDependencies：项目开发时依赖的包
+
+    安装项目依赖
+    npm install 包名
+    安装开发依赖
+    npm install 包名 --save-dev
+     -->
+</body>
+</html>
