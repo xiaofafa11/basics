@@ -88,52 +88,55 @@
     2.以命令行工具形式存在，辅助项目开发
 
     第三方模块库
-    npmjs.com:第三方模块库的存储分发仓库
-    获取第三方模块
-    npm(node package manager):node的第三方模块管理工具
+        npmjs.com:第三方模块库的存储分发仓库
+        获取第三方模块
+        npm(node package manager):node的第三方模块管理工具
        下载：npm install 模块名
        卸载：npm uninstall package 模块名
 
     全局安装和本地安装
-    命令行工具：全局安装
-    原文件：本地安装
+        命令行工具：全局安装
+        原文件：本地安装
 
     第三方模块nodemon(热部署)
-    nodemon是一个命令行工具，是辅助项目开发的
-    使用的步骤
-    1.使用指令：npm install nodemon -g  //-g表示全局
-    2.在命令行工具里面用nodemon来代替node指令执行文件
-    退出热部署：ctrl + c
+        nodemon是一个命令行工具，是辅助项目开发的
+        使用的步骤
+        1.使用指令：npm install nodemon -g  //-g表示全局
+        2.在命令行工具里面用nodemon来代替node指令执行文件
+        退出热部署：ctrl + c
 
     第三方模块nrm(切换下载地址)
-    nrm(npm registry manager):npm下载地址切换工具
-    npm默认的下载地址在国外，下载速度比较缓慢
-    使用步骤：
-    1.使用指令：npm install nrm -g下载
-    2.查看国内的下载地址列表 nrm ls
-    3.切换npm下载地址 nrm use 下载地址名称
+        nrm(npm registry manager):npm下载地址切换工具
+        npm默认的下载地址在国外，下载速度比较缓慢
+        使用步骤：
+        1.使用指令：npm install nrm -g下载
+        2.查看国内的下载地址列表 nrm ls
+        3.切换npm下载地址 nrm use 下载地址名称
 
-    package.json文件的作用
-     项目的描述信息、记录的当前项目的项目信息，例如项目名、版本号
+        package.json文件的作用
+        项目的描述信息、记录的当前项目的项目信息，例如项目名、版本号
 
-     "name": "项目名",
-    "version": "版本信息",
-    "description": "项目描述信息",
-    "main": "主模块",
-    "scripts": 指令别名{
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [关键字],
-    "author": "作者",
-    license:项目协商	ISC：开发源代码协议
+        "name": "项目名",
+        "version": "版本信息",
+        "description": "项目描述信息",
+        "main": "主模块",
+        "scripts": 指令别名{
+            "test": "echo \"Error: no test specified\" && exit 1"
+        },
+        "keywords": [关键字],
+        "author": "作者",
+        license:项目协商	ISC：开发源代码协议
 
-    dependencies：项目运行时依赖的包
-    devDependencies：项目开发时依赖的包
+        dependencies：项目运行时依赖的包
+        devDependencies：项目开发时依赖的包
 
     安装项目依赖
-    npm install 包名
+        npm install 包名
     安装开发依赖
-    npm install 包名 --save-dev
+        npm install 包名 --save-dev
+
+    http模块
+    
      -->
 </body>
 </html>
